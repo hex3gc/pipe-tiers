@@ -9,6 +9,8 @@ Pump speed: **600**
 
 > Examples: Vanilla iron pipes
 
+---
+
 #### Tier 2 - Mid-level
 *Mid-tech, more expensive pipes that inherit similar stats to vanilla.*
 
@@ -16,6 +18,8 @@ Max. extent: **256**
 Pump speed: **1200**
 
 > Examples: K2 Steel Pipes, Pyanodons niobium pipes
+
+---
 
 #### Tier 3 - Advanced
 *High-tech utility pipes with a significant edge over vanilla.*
@@ -25,6 +29,8 @@ Pump speed: **2400**
 
 > Examples: Paracelsin zinc pipes, Pyanodons multi-purpose pipes
 
+---
+
 #### Tier 4 - Mass Fluid Transportation
 *Big pipes with massive throughput, satisfying all your fluid moving needs.*
 
@@ -32,6 +38,8 @@ Max. extent: **8192**
 Pump speed: **24000**
 
 > Examples: Fluid Must Flow ducts
+
+---
 
 ![image](https://i.imgur.com/lMcWxkD.png)
 
