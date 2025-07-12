@@ -68,7 +68,7 @@ data:extend
         type = "int-setting",
         name = "h3pt_tier4PumpSpeed",
         setting_type = "startup",
-        default_value = 12000
+        default_value = 24000
     }
 })
 
@@ -104,7 +104,7 @@ data:extend
         type = "int-setting",
         name = "h3pt_pipeTier_factorioPump",
         setting_type = "startup",
-        default_value = 1,
+        default_value = 2,
         allowed_values = {1,2,3,4}
     }
 })
@@ -114,7 +114,7 @@ data:extend -- Factorio: Offshore pump
         type = "int-setting",
         name = "h3pt_pipeTier_factorioOffshorePump",
         setting_type = "startup",
-        default_value = 1,
+        default_value = 2,
         allowed_values = {1,2,3,4}
     }
 })
