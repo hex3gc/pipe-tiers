@@ -33,14 +33,14 @@ Pump speed: **24000**
 
 > Examples: Fluid Must Flow ducts
 
-![image](https://github.com/hex3gc/pipe-tiers/blob/main/images/pipeTiers_img1.png)
+![image](https://i.imgur.com/lMcWxkD.png)
 
 If you don't like any of the numbers, they're easy to change. See **Configuration**.
 
 ### Usage
 When added to vanilla Factorio, this mod doesn't do much except downgrade your pipes. It's intended to be included in a larger set of mods to make their additions more valuable. The below example uses [K2 Steel Pipes](https://mods.factorio.com/mod/k2-steel-pipes), [Planet Paracelsin](https://mods.factorio.com/mod/Paracelsin), and [Planet Maraxsis](https://mods.factorio.com/mod/maraxsis) with [Fluid Must Flow](https://mods.factorio.com/mod/FluidMustFlow), forming a nice progression.
 
-![image](https://github.com/hex3gc/pipe-tiers/blob/main/images/pipeTiers_imgProgression.png)
+![image](https://i.imgur.com/wveymZ2.png)
 
 I highly recommend at least using K2 Steel Pipes since they're configured to have similar stats to vanilla pipes by default, or using something else you can assign to Tier 2.
 
@@ -51,7 +51,7 @@ Each tier has its own **pipeline extent** and **pump speed**:
 
 > **Pump speed** determines how much fluid is moved through a pump per second, limiting the throughput of the pipe tier by its pumps. Vanilla pumps are at a higher tier by default due to there being no built-in alternatives.
 
-![image](https://github.com/hex3gc/pipe-tiers/blob/main/images/pipeTiers_imgConfig.png)
+![image](https://i.imgur.com/NFkyPDv.png)
 
 The settings to configure these for your pipes include:
 > **Default tier:** All pipes not covered by the mod are assigned to this tier.
@@ -67,11 +67,11 @@ Mod options will show/hide automatically depending on which mods are installed.
 ### Adding custom pipes
 Adding pipes from non-supported mods or overriding existing tier settings can be done through the **Custom overrides** entries on the mod settings menu. Just add the entity name of any pipe, tank or pump and its settings will be overwritten with those from the given tier. **Entity names must be separated by commas.**
 
-![image](https://github.com/hex3gc/pipe-tiers/blob/main/images/pipeTiers_imgOverrides.png)
+![image](https://i.imgur.com/YIop25x.png)
 
 You can find the entity name of any building by pressing **F4** to open the debug menu, enabling **show-debug-info-in-tooltips**, and hovering over the building with your cursor.
 
-![image](https://github.com/hex3gc/pipe-tiers/blob/main/images/pipeTiers_imgEntityNames.png)
+![image](https://i.imgur.com/doKUVfK.png)
 
 ### Special thanks
 
