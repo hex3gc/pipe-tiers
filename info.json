@@ -1,0 +1,30 @@
+{
+  "name": "pipe-tiers",
+  "title": "Pipe Tiers",
+  "description": "Adds more progression to pipes by assigning modded pipes different extents and pump throughputs. Highly configurable.",
+  "author": "hex3",
+  "homepage": "",
+  "version": "1.0.0",
+  "factorio_version": "2.0",
+  "dependencies": 
+  [
+    "base >= 2.0.0",
+    "? FluidMustFlow",
+    "? Krastorio2",
+    "? k2-steel-pipes",
+    "? k2-fluid-storage",
+    "? elevated-pipes",
+    "? Paracelsin",
+    "? pyindustry",
+    "? pyhightech",
+    "? pypetroleumhandling",
+    "? SchallPipeScaling",
+    "? underground-pipe-pack"
+  ],
+  "quality_required": false,
+  "space_travel_required": false,
+  "spoiling_required": false,
+  "freezing_required": false,
+  "segmented_units_required": false,
+  "expansion_shaders_required": false
+}
