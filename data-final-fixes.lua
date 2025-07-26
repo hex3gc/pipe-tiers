@@ -1,5 +1,6 @@
 -- Code adapted from "Extents begone" by notnotmelon https://github.com/notnotmelon/extents-begone
 -- except i used it to actually ADD extents ha ha
+-- i'll make more extents......... i'll make even smaller ones
 local function locateInTable(table, value)
     for i = 1, #table do
         if table[i] == value then
@@ -128,15 +129,24 @@ applyTierValuesToAllEntities(settings.startup["h3pt_defaultTier"].value);
 applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_factorioPipe"].value, {"pipe", "pipe-to-ground"});
 applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_factorioPump"].value, {"pump"});
 applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_factorioOffshorePump"].value, {"offshore-pump"});
+if mods["the-one-mod-with-underground-bits"] then
+    applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_factorioPipe"].value, {"tomwub-pipe"});
+end
 
 -- Fluid Must Flow
 if mods["FluidMustFlow"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_fluidMustFlow"].value, {"duct-cross", "duct-curve", "duct-exhaust", "duct-intake", "duct-long", "duct-small", "duct-t-junction", "duct-underground", "duct", "non-return-duct"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_fluidMustFlow"].value, {"tomwub-duct-cross", "tomwub-duct-curve", "tomwub-duct-long", "tomwub-duct-small", "tomwub-duct-t-junction", "tomwub-duct"});
+    end
 end
 
 -- Krastorio 2
 if mods["Krastorio2"] or mods["k2-steel-pipes"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_k2SteelPipes"].value, {"kr-steel-pipe", "kr-steel-pipe-to-ground", "kr-steel-pump"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_k2SteelPipes"].value, {"tomwub-kr-steel-pipe"});
+    end
 end
 if mods["Krastorio2"] or mods["k2-fluid-storage"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_k2FluidStorage"].value, {"kr-fluid-storage-1", "kr-fluid-storage-2"});
@@ -150,6 +160,9 @@ end
 -- Paracelsin
 if mods["Paracelsin"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_zincPipes"].value, {"zinc-pipe", "zinc-pipe-to-ground", "zinc-storage-tank", "zinc-pump"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_zincPipes"].value, {"tomwub-zinc-pipe"});
+    end
 end
 
 -- PyMods
@@ -157,9 +170,15 @@ if mods["pyindustry"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyNiobiumPipes"].value, {"niobium-pipe", "niobium-pipe-to-ground"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyValves"].value, {"py-underflow-valve", "py-overflow-valve", "py-check-valve"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyStorageTanks"].value, {"py-tank-1000", "py-tank-1500", "py-tank-3000", "py-tank-4000", "py-tank-5000", "py-tank-6500", "py-tank-7000", "py-tank-8000"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyNiobiumPipes"].value, {"tomwub-niobium-pipe"});
+    end
 end
 if mods["pyhightech"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyMultiPipes"].value, {"ht-pipes", "ht-pipes-to-ground"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyMultiPipes"].value, {"tomwub-ht-pipes"});
+    end
 end
 if mods["pypetroleumhandling"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyStorageTanks"].value, {"py-tank-9000", "py-tank-10000"});
@@ -170,6 +189,9 @@ if mods["SchallPipeScaling"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS1"].value, {"pipe-PS-1", "pipe-to-ground-PS-1", "pump-PS-1"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS2"].value, {"pipe-PS-2", "pipe-to-ground-PS-2", "pump-PS-2"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS3"].value, {"pipe-PS-3", "pipe-to-ground-PS-3", "pump-PS-3"});
+    if mods["the-one-mod-with-underground-bits"] then
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyMultiPipes"].value, {"tomwub-ht-pipes"});
+    end
 end
 
 -- Advanced fluid handling

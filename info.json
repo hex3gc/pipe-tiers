@@ -4,7 +4,7 @@
   "description": "Adds more progression to pipes by assigning modded pipes different extents and pump throughputs. Highly configurable.",
   "author": "hex3",
   "homepage": "https://github.com/hex3gc/pipe-tiers/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "factorio_version": "2.0",
   "dependencies": 
   [
@@ -19,7 +19,8 @@
     "? pyhightech",
     "? pypetroleumhandling",
     "? SchallPipeScaling",
-    "? underground-pipe-pack"
+    "? underground-pipe-pack",
+    "? the-one-mod-with-underground-bits"
   ],
   "quality_required": false,
   "space_travel_required": false,
