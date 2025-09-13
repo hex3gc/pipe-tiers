@@ -191,7 +191,9 @@ if mods["SchallPipeScaling"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS2"].value, {"pipe-PS-2", "pipe-to-ground-PS-2", "pump-PS-2"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS3"].value, {"pipe-PS-3", "pipe-to-ground-PS-3", "pump-PS-3"});
     if mods["the-one-mod-with-underground-bits"] then
-        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_pyMultiPipes"].value, {"tomwub-ht-pipes"});
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS1"].value, {"tomwub-pipe-PS-1"});
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS2"].value, {"tomwub-pipe-PS-2"});
+        applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_schallPS3"].value, {"tomwub-pipe-PS-3"});
     end
 end
 
