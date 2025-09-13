@@ -202,7 +202,7 @@ if mods["underground-pipe-pack"] then
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_advTier1"].value, {"underground-mini-pump", "one-to-one-forward-pipe", "one-to-two-perpendicular-pipe", "one-to-three-forward-pipe", "one-to-four-pipe", "underground-i-pipe", "underground-L-pipe", "underground-t-pipe", "underground-cross-pipe", "4-to-4-pipe"}); -- You have too many pipes
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_advTier2"].value, {"underground-mini-pump-t2", "one-to-one-forward-t2-pipe", "one-to-two-perpendicular-t2-pipe", "one-to-three-forward-t2-pipe", "one-to-four-t2-pipe", "underground-i-t2-pipe", "underground-L-t2-pipe", "underground-t-t2-pipe", "underground-cross-t2-pipe"});
     applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_advTier3"].value, {"underground-mini-pump-t3", "one-to-one-forward-t3-pipe", "one-to-two-perpendicular-t3-pipe", "one-to-three-forward-t3-pipe", "one-to-four-t3-pipe", "underground-i-t3-pipe", "underground-L-t3-pipe", "underground-t-t3-pipe", "underground-cross-t3-pipe"});
-    applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_advValves"].value, {"80-top-up-valve", "80-overflow-valve", "check-valve"});
+    applyTierValuesToNamedEntities(settings.startup["h3pt_pipeTier_advValves"].value, {"10-top-up-valve", "20-top-up-valve", "30-top-up-valve", "40-top-up-valve", "50-top-up-valve", "60-top-up-valve", "70-top-up-valve", "80-top-up-valve", "90-top-up-valve", "10-overflow-valve", "20-overflow-valve", "30-overflow-valve", "40-overflow-valve", "50-overflow-valve", "60-overflow-valve", "70-overflow-valve", "80-overflow-valve", "90-overflow-valve", "check-valve"});
 end
 
 -- Overrides
