@@ -1,6 +1,4 @@
 -- Code adapted from "Extents begone" by notnotmelon https://github.com/notnotmelon/extents-begone
--- except i used it to actually ADD extents ha ha
--- i'll make more extents......... i'll make even smaller ones
 local function locateInTable(table, value)
     for i = 1, #table do
         if table[i] == value then
@@ -30,39 +28,42 @@ local function commaDelimitedListIntoTable(inputString)
     return retTable;
 end
 
+local excludeList = commaDelimitedListIntoTable(settings.startup["h3pt_overrides_exclude"].value);
+
 local function applyTierValuesToAllEntities(tier)
     local extent = settings.startup["h3pt_tier"..tier.."PipeExtent"].value;
     local pumpSpeed = settings.startup["h3pt_tier"..tier.."PumpSpeed"].value / 60;
 
     for entity_prototype in pairs(defines.prototypes.entity) do
         for _, entity in pairs(data.raw[entity_prototype] or {}) do
-
-            for _, fluid_box in pairs(entity.fluid_boxes or {}) do
-                fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.fluid_box then
-                entity.fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.input_fluid_box then
-                entity.input_fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.output_fluid_box then
-                entity.output_fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.fuel_fluid_box then
-                entity.fuel_fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.oxidizer_fluid_box then
-                entity.oxidizer_fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.energy_source and entity.energy_source.type == "fluid" then
-                entity.energy_source.fluid_box.max_pipeline_extent = extent;
-            end
-            if entity.pumping_speed then
-                entity.pumping_speed = pumpSpeed;
-            end
-            if entity.flow_rate then
-                entity.flow_rate = pumpSpeed;
+            if not locateInTable(excludeList, entity.name) then
+                for _, fluid_box in pairs(entity.fluid_boxes or {}) do
+                    fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.fluid_box then
+                    entity.fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.input_fluid_box then
+                    entity.input_fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.output_fluid_box then
+                    entity.output_fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.fuel_fluid_box then
+                    entity.fuel_fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.oxidizer_fluid_box then
+                    entity.oxidizer_fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.energy_source and entity.energy_source.type == "fluid" then
+                    entity.energy_source.fluid_box.max_pipeline_extent = extent;
+                end
+                if entity.pumping_speed then
+                    entity.pumping_speed = pumpSpeed;
+                end
+                if entity.flow_rate then
+                    entity.flow_rate = pumpSpeed;
+                end
             end
         end
     end
@@ -84,7 +85,7 @@ local function applyTierValuesToNamedEntities(tier, listOfEntityNames)
                 break;
             end
 
-            if locateInTable(listOfEntityNames, entity.name) then
+            if locateInTable(listOfEntityNames, entity.name) and not locateInTable(excludeList, entity.name) then
 
                 for _, fluid_box in pairs(entity.fluid_boxes or {}) do
                     fluid_box.max_pipeline_extent = extent;

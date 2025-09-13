@@ -361,3 +361,14 @@ data:extend
         auto_trim = true
     }
 })
+data:extend
+({
+    {
+        type = "string-setting",
+        name = "h3pt_overrides_exclude",
+        setting_type = "startup",
+        default_value = "",
+        allow_blank = true,
+        auto_trim = true
+    }
+})

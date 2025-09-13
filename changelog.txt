@@ -1,5 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
+Date: 2025-9-13
+  Features:
+    - An exclude list where certain pipes can be ignored, keeping their original extents and pump speeds. Intended for use with specialized entities that don't fit into a tier.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
 Date: 2025-7-26
   Features:
     - Adds support for 'Actual underground pipes'

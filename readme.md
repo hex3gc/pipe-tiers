@@ -89,6 +89,8 @@ You can find the entity name of any building by pressing **F4** to open the debu
 
 ![image](https://i.imgur.com/doKUVfK.png)
 
+With the **Exclude list** setting you can build a list of excluded pipes with the same method. Pipe entities in this list will not have their properties affected by the mod.
+
 ---
 
 ### Special thanks
